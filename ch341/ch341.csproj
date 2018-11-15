@@ -35,7 +35,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CH341A.cs" />
-    <Compile Include="CH341Native.cs" />
+    <Compile Include="Ch341a_constant.cs" />
+    <Compile Include="Ch341a_dllcall.cs" />
+    <Compile Include="ControlTransferCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
