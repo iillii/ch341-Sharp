@@ -345,7 +345,7 @@ namespace CH341
         /// <summary>
         /// Read USB configuration descriptor
         /// </summary>
-        /// <param name="oBuffer">returns an array of bytes containing the USB configuration descriptor</param>
+        /// <param name="obuf">Returns an array of bytes containing the USB configuration descriptor</param>
         /// <returns></returns>
         public bool GetConfigDescr(out byte[] obuf)
         {
@@ -582,7 +582,7 @@ namespace CH341
         /// <summary>
         /// Read data block from #1 port
         /// </summary>
-        /// <param name="ioLength">The length to be read
+        /// <param name="ioLength">The length to be read</param>
         /// <param name="obuf">Returns an array with bytes read</param>
         /// <returns></returns>
         public bool ReadData1(UInt32 ioLength, out byte[] obuf)
@@ -908,7 +908,7 @@ namespace CH341
         /// Set the I/O direction of the D5-D0 pin of CH341, and directly output data through the D5-D0 pin of CH341, the efficiency is higher than SetOutput()
         /// </summary>
         /// <param name="iSetDirOut">Set the I/O direction of each pin of D5-D0. When a bit is cleared to 0, the corresponding pin is input. If a bit is set to 1, the corresponding pin is output. In the parallel mode, the default value is 0x00</param>
-        /// <param name="iSetDataOut">Set the output data of each pin of D5-D0. If the I/O direction is output, then the corresponding pin outputs a low level when a bit is cleared to 0, and the corresponding pin outputs a high level when a bit is set to 1<param>
+        /// <param name="iSetDataOut">Set the output data of each pin of D5-D0. If the I/O direction is output, then the corresponding pin outputs a low level when a bit is cleared to 0, and the corresponding pin outputs a high level when a bit is set to 1</param>
         /// <returns></returns>
         public bool Set_D5_D0(uint iSetDirOut, uint iSetDataOut)
         {
